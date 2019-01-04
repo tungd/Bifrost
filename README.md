@@ -17,6 +17,7 @@ service. There's no step 3™.
 
 # Roadmap
 
+- [ ] Kubernetes Pod And Service Discovery
 - [ ] Configuration: allow to define new services and servers, without relying
       on =~/.ssh/config=
 - [ ] Logging
