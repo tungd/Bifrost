@@ -18,9 +18,11 @@ service. There's no step 3™.
 # Roadmap
 
 - [ ] Kubernetes Pod And Service Discovery
+- [ ] Automatic startup
 - [ ] Configuration: allow to define new services and servers, without relying
-      on =~/.ssh/config=
-- [ ] Logging
+      on =~/.ssh/config=. We might need this since currently we're not sandbox
+      friendly
+- [ ] Logging console
 - [ ] AppStore release
 
 # License
