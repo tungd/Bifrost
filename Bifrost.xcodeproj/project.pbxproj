@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6EB621E21DF4F5D0002473F /* Gateway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gateway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EB621E21DF4F5D0002473F /* Bifrost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bifrost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EB622121DF4F5D0002473F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6EB622321DF4F5D0002473F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6EB622521DF4F5F0002473F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		A6EB621F21DF4F5D0002473F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6EB621E21DF4F5D0002473F /* Gateway.app */,
+				A6EB621E21DF4F5D0002473F /* Bifrost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6EB621D21DF4F5D0002473F /* Gateway */ = {
+		A6EB621D21DF4F5D0002473F /* Bifrost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6EB622E21DF4F5F0002473F /* Build configuration list for PBXNativeTarget "Gateway" */;
+			buildConfigurationList = A6EB622E21DF4F5F0002473F /* Build configuration list for PBXNativeTarget "Bifrost" */;
 			buildPhases = (
 				A6EB621A21DF4F5D0002473F /* Sources */,
 				A6EB621B21DF4F5D0002473F /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = Gateway;
+			name = Bifrost;
 			productName = Gateway;
-			productReference = A6EB621E21DF4F5D0002473F /* Gateway.app */;
+			productReference = A6EB621E21DF4F5D0002473F /* Bifrost.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6EB621921DF4F5D0002473F /* Build configuration list for PBXProject "Gateway" */;
+			buildConfigurationList = A6EB621921DF4F5D0002473F /* Build configuration list for PBXProject "Bifrost" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6EB621D21DF4F5D0002473F /* Gateway */,
+				A6EB621D21DF4F5D0002473F /* Bifrost */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6EB621921DF4F5D0002473F /* Build configuration list for PBXProject "Gateway" */ = {
+		A6EB621921DF4F5D0002473F /* Build configuration list for PBXProject "Bifrost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6EB622C21DF4F5F0002473F /* Debug */,
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6EB622E21DF4F5F0002473F /* Build configuration list for PBXNativeTarget "Gateway" */ = {
+		A6EB622E21DF4F5F0002473F /* Build configuration list for PBXNativeTarget "Bifrost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6EB622F21DF4F5F0002473F /* Debug */,
