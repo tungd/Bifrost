@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Gateway
+//  Bifrost
 //
 //  Created by Tung Dao on 4/1/2019.
 //  Copyright © 2019 Tung Dao. All rights reserved.

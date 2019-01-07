@@ -21,7 +21,7 @@
 		A6EB622521DF4F5F0002473F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EB622821DF4F5F0002473F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6EB622A21DF4F5F0002473F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6EB622B21DF4F5F0002473F /* Gateway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gateway.entitlements; sourceTree = "<group>"; };
+		A6EB622B21DF4F5F0002473F /* Bifrost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bifrost.entitlements; sourceTree = "<group>"; };
 		A6EB623321DF5D650002473F /* PathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PathKit.framework; path = Carthage/Build/Mac/PathKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 		A6EB621521DF4F5D0002473F = {
 			isa = PBXGroup;
 			children = (
-				A6EB622021DF4F5D0002473F /* Gateway */,
+				A6EB622021DF4F5D0002473F /* Bifrost */,
 				A6EB621F21DF4F5D0002473F /* Products */,
 				A6EB623321DF5D650002473F /* PathKit.framework */,
 			);
@@ -54,7 +54,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6EB622021DF4F5D0002473F /* Gateway */ = {
+		A6EB622021DF4F5D0002473F /* Bifrost */ = {
 			isa = PBXGroup;
 			children = (
 				A6EB622121DF4F5D0002473F /* AppDelegate.swift */,
@@ -62,9 +62,9 @@
 				A6EB622521DF4F5F0002473F /* Assets.xcassets */,
 				A6EB622721DF4F5F0002473F /* Main.storyboard */,
 				A6EB622A21DF4F5F0002473F /* Info.plist */,
-				A6EB622B21DF4F5F0002473F /* Gateway.entitlements */,
+				A6EB622B21DF4F5F0002473F /* Bifrost.entitlements */,
 			);
-			path = Gateway;
+			path = Bifrost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,12 +310,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Gateway/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bifrost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Gateway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Bifrost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -332,12 +332,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Gateway/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bifrost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Gateway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Bifrost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
