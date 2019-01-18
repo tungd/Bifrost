@@ -101,8 +101,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(GatewayMenuItem(service: "Kubernetes API", port: 6443, action: #selector(AppDelegate.toggleProxy(_:)), keyEquivalent: ""))
         menu.addItem(GatewayMenuItem(service: "Kubernetes Dashboard", port: 8443, action: #selector(AppDelegate.toggleProxy(_:)), keyEquivalent: ""))
 
-//        menu.addItem(NSMenuItem.separator())
-//
+        menu.addItem(NSMenuItem.separator())
+
+        menu.addItem(GatewayMenuItem(service: "Prometheus", port: 9090, action: #selector(AppDelegate.toggleProxy(_:)), keyEquivalent: ""))
+
 //        menu.addItem(GatewayMenuItem(service: "PostgreSQL", port: 5432, action: #selector(AppDelegate.toggleProxy(_:)), keyEquivalent: ""))
 //        menu.addItem(GatewayMenuItem(service: "MySQL", port: 3306, action: #selector(AppDelegate.toggleProxy(_:)), keyEquivalent: ""))
 
