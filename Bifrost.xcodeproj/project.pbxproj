@@ -12,6 +12,7 @@
 		A6EB622621DF4F5F0002473F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622521DF4F5F0002473F /* Assets.xcassets */; };
 		A6EB622921DF4F5F0002473F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622721DF4F5F0002473F /* Main.storyboard */; };
 		A6EB623421DF5D650002473F /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EB623321DF5D650002473F /* PathKit.framework */; };
+		A6EBB48821E3431A009C7720 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EBB48721E3431A009C7720 /* ProxyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A6EB622A21DF4F5F0002473F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6EB622B21DF4F5F0002473F /* Bifrost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bifrost.entitlements; sourceTree = "<group>"; };
 		A6EB623321DF5D650002473F /* PathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PathKit.framework; path = Carthage/Build/Mac/PathKit.framework; sourceTree = "<group>"; };
+		A6EBB48721E3431A009C7720 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A6EB622121DF4F5D0002473F /* AppDelegate.swift */,
+				A6EBB48721E3431A009C7720 /* ProxyManager.swift */,
 				A6EB622321DF4F5D0002473F /* ViewController.swift */,
 				A6EB622521DF4F5F0002473F /* Assets.xcassets */,
 				A6EB622721DF4F5F0002473F /* Main.storyboard */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EBB48821E3431A009C7720 /* ProxyManager.swift in Sources */,
 				A6EB622421DF4F5D0002473F /* ViewController.swift in Sources */,
 				A6EB622221DF4F5D0002473F /* AppDelegate.swift in Sources */,
 			);
