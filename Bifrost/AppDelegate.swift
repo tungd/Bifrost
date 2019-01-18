@@ -75,7 +75,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return lines.split(separator: "\n").filter { line in
                 return line.starts(with: "Host ")
             }.map { line in
-                return String(line[line.index(line.startIndex, offsetBy: 5)...])
+                return String(line.dropFirst("Host ".count))
             }
         } catch {
             print("Error error: \(error).", to: &standardError)
