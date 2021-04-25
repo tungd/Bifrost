@@ -12,7 +12,6 @@
 		A6EB622421DF4F5D0002473F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB622321DF4F5D0002473F /* ViewController.swift */; };
 		A6EB622621DF4F5F0002473F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622521DF4F5F0002473F /* Assets.xcassets */; };
 		A6EB622921DF4F5F0002473F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622721DF4F5F0002473F /* Main.storyboard */; };
-		A6EB623421DF5D650002473F /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EB623321DF5D650002473F /* PathKit.framework */; };
 		A6EBB48821E3431A009C7720 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EBB48721E3431A009C7720 /* ProxyManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		A6EB622821DF4F5F0002473F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6EB622A21DF4F5F0002473F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6EB622B21DF4F5F0002473F /* Bifrost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bifrost.entitlements; sourceTree = "<group>"; };
-		A6EB623321DF5D650002473F /* PathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PathKit.framework; path = Carthage/Build/Mac/PathKit.framework; sourceTree = "<group>"; };
 		A6EBB48721E3431A009C7720 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,7 +32,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A670FCC62635C7AE003147CA /* PathKit in Frameworks */,
-				A6EB623421DF5D650002473F /* PathKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +43,6 @@
 			children = (
 				A6EB622021DF4F5D0002473F /* Bifrost */,
 				A6EB621F21DF4F5D0002473F /* Products */,
-				A6EB623321DF5D650002473F /* PathKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,7 +78,6 @@
 				A6EB621A21DF4F5D0002473F /* Sources */,
 				A6EB621B21DF4F5D0002473F /* Frameworks */,
 				A6EB621C21DF4F5D0002473F /* Resources */,
-				A6EB623521DF5D9C0002473F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,28 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A6EB623521DF5D9C0002473F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/PathKit.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PathKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6EB621A21DF4F5D0002473F /* Sources */ = {
@@ -318,10 +291,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P2FJWTSN96;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Bifrost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,10 +309,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P2FJWTSN96;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Bifrost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
