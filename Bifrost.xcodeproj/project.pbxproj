@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A670FCC62635C7AE003147CA /* PathKit in Frameworks */ = {isa = PBXBuildFile; productRef = A670FCC52635C7AE003147CA /* PathKit */; };
 		A6EB622221DF4F5D0002473F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB622121DF4F5D0002473F /* AppDelegate.swift */; };
 		A6EB622421DF4F5D0002473F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB622321DF4F5D0002473F /* ViewController.swift */; };
 		A6EB622621DF4F5F0002473F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622521DF4F5F0002473F /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A670FCC62635C7AE003147CA /* PathKit in Frameworks */,
 				A6EB623421DF5D650002473F /* PathKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +89,9 @@
 			dependencies = (
 			);
 			name = Bifrost;
+			packageProductDependencies = (
+				A670FCC52635C7AE003147CA /* PathKit */,
+			);
 			productName = Gateway;
 			productReference = A6EB621E21DF4F5D0002473F /* Bifrost.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +125,9 @@
 				Base,
 			);
 			mainGroup = A6EB621521DF4F5D0002473F;
+			packageReferences = (
+				A670FCC42635C7AE003147CA /* XCRemoteSwiftPackageReference "PathKit" */,
+			);
 			productRefGroup = A6EB621F21DF4F5D0002473F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A670FCC42635C7AE003147CA /* XCRemoteSwiftPackageReference "PathKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:kylef/PathKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A670FCC52635C7AE003147CA /* PathKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A670FCC42635C7AE003147CA /* XCRemoteSwiftPackageReference "PathKit" */;
+			productName = PathKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6EB621621DF4F5D0002473F /* Project object */;
 }
