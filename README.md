@@ -1,22 +1,34 @@
 # Bifrost
 
-Menubar application to provide proxy to various services through SSH.
+# What
+
+Bifrost is a menubar application to providing proxies to various services
+through SSH.
 
 # Why
 
 Sometimes I need a Sock5 proxy to get through BS, and I already have some VPS
-running around. The other time I have some services running on VPS that I want
-to tunnel to my machine so that I can use them as-if they were running locally,
-and I'm too lazy to keep a terminal tab open for each of those service.
+running around. The other time I have some services running on VPS or a remote
+machine that I want to tunnel to my machine so that I can use them as-if they
+were running locally, and I'm too lazy to keep a terminal tab open for each of
+those service.
 
 # How
 
 Bifrost sits on your menubar, and read your `~/.ssh/config` for list of servers
-to connect to. Each time you need a proxy just select the server and enable the
-service. There's no step 3™.
+to connect to.
 
-Behind the scene, what the app really does is to create a SSH tunnel to your
-server, with the correct mapping port-to-port. It is the equivalent of running
+Given that you already have config like this in your `~/.ssh/config`:
+
+    Host web
+      HostName <remote_ip>
+      User <user>
+      IdentityFile ~/.ssh/id_rsa
+
+Each time you need a proxy just select the server and enable the
+service. There's no step 3™. Behind the scene, what the app really does is to
+create a SSH tunnel to your server, with the correct mapping port-to-port. It is
+the equivalent of running
 
     ssh -CN -L <port>:127.0.0.1:<port> <remote_ip>
 
@@ -29,7 +41,7 @@ server, with the correct mapping port-to-port. It is the equivalent of running
 - [ ] Kubernetes Pod And Service Discovery
 - [ ] Automatic startup
 - [ ] Configuration: allow to define new services and servers, without relying
-      on =~/.ssh/config=. We might need this since currently we're not sandbox
+      on `~/.ssh/config`. We might need this since currently we're not sandbox
       friendly
 - [ ] Logging console
 - [ ] AppStore release
