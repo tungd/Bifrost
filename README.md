@@ -1,4 +1,4 @@
-# Gateway
+# Bifrost
 
 Menubar application to provide proxy to various services through SSH.
 
@@ -11,9 +11,18 @@ and I'm too lazy to keep a terminal tab open for each of those service.
 
 # How
 
-Gateway sits on your menubar, and read your =~/.ssh/config= for list of servers
+Bifrost sits on your menubar, and read your `~/.ssh/config` for list of servers
 to connect to. Each time you need a proxy just select the server and enable the
 service. There's no step 3™.
+
+Behind the scene, what the app really does is to create a SSH tunnel to your
+server, with the correct mapping port-to-port. It is the equivalent of running
+
+    ssh -CN -L <port>:127.0.0.1:<port> <remote_ip>
+
+# Screenshot
+
+![Screenshot](Bifrost/screenshot.png)
 
 # Roadmap
 
@@ -27,7 +36,7 @@ service. There's no step 3™.
 
 # License
 
-Copyright 2018 Tung Dao
+Copyright 2021 Tung Dao
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
