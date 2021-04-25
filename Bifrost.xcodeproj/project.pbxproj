@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A670FCC62635C7AE003147CA /* PathKit in Frameworks */ = {isa = PBXBuildFile; productRef = A670FCC52635C7AE003147CA /* PathKit */; };
 		A6EB622221DF4F5D0002473F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB622121DF4F5D0002473F /* AppDelegate.swift */; };
-		A6EB622421DF4F5D0002473F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB622321DF4F5D0002473F /* ViewController.swift */; };
 		A6EB622621DF4F5F0002473F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622521DF4F5F0002473F /* Assets.xcassets */; };
 		A6EB622921DF4F5F0002473F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EB622721DF4F5F0002473F /* Main.storyboard */; };
 		A6EBB48821E3431A009C7720 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EBB48721E3431A009C7720 /* ProxyManager.swift */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		A6EB621E21DF4F5D0002473F /* Bifrost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bifrost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EB622121DF4F5D0002473F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6EB622321DF4F5D0002473F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6EB622521DF4F5F0002473F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EB622821DF4F5F0002473F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6EB622A21DF4F5F0002473F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			children = (
 				A6EB622121DF4F5D0002473F /* AppDelegate.swift */,
 				A6EBB48721E3431A009C7720 /* ProxyManager.swift */,
-				A6EB622321DF4F5D0002473F /* ViewController.swift */,
 				A6EB622521DF4F5F0002473F /* Assets.xcassets */,
 				A6EB622721DF4F5F0002473F /* Main.storyboard */,
 				A6EB622A21DF4F5F0002473F /* Info.plist */,
@@ -98,11 +95,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Tung Dao";
 				TargetAttributes = {
 					A6EB621D21DF4F5D0002473F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1240;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -150,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6EBB48821E3431A009C7720 /* ProxyManager.swift in Sources */,
-				A6EB622421DF4F5D0002473F /* ViewController.swift in Sources */,
 				A6EB622221DF4F5D0002473F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +192,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +254,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -288,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P2FJWTSN96;
@@ -298,7 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Bifrost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -306,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P2FJWTSN96;
@@ -316,7 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tungdao.Bifrost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
